@@ -21,3 +21,5 @@ go.work.sum
 # env file
 .env
 
+# Jetbrains IDEs files
+.idea
