@@ -1,0 +1,26 @@
+linters:
+  enable:
+    - bodyclose
+    - dupl
+    - errcheck
+    - errorlint
+    - funlen
+    - gocognit
+    - goconst
+    - gocritic
+    - gocyclo
+    - godox
+    - gofmt
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - nestif
+    - prealloc
+    - revive
+    - staticcheck
+    - stylecheck
+    - unused
+    - whitespace
+run:
+  timeout: 5m
