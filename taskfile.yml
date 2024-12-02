@@ -1,0 +1,21 @@
+# https://taskfile.dev/
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: list
+
+  lint:
+    desc: Run golangci-lint
+    cmd: golangci-lint run
+
+  run:
+    desc: Run main binary, pass args like `task run -- $ARGS`
+    cmd: go run main.go {{.CLI_ARGS}}
+
+  list:
+    desc: List available tasks
+    internal: true
+    cmds:
+      - task --list
